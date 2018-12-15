@@ -1,0 +1,73 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desconhecido </title></head><body>
+<h1 id="desafio-da-semana-2">Desafio da semana #2</h1>
+<p>Nesse exercício, você está livre para escolher os nomes para suas variáveis e funções! :smile:</p>
+<p>```js
+// Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
+function soma(a, b){
+    return (a+b);
+}</p>
+<p>// Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando <code>5</code> ao resultado retornado da função.
+var inc = soma(2,3) + 5;</p>
+<p>// Qual o valor atualizado dessa variável?
+10;</p>
+<p>// Declare uma nova variável, sem valor.
+var semValor;</p>
+<p>/<em>
+Crie uma função que adicione um valor à variável criada acima, e retorne a string:
+    O valor da variável agora é VALOR.
+Onde VALOR é o novo valor da variável.
+</em>/
+function addValor(parametro){
+    semValor = parametro;
+    return "O valor da variavel semValor agora é" + semValor;
+}</p>
+<p>// Invoque a função criada acima.
+addValor(15);</p>
+<p>// Qual o retorno da função? (Use comentários de bloco).
+"O valor da variavel semValor agora é 15";</p>
+<p>/<em> + semValor
+Crie uma função com as seguintes características:
+1. A função deve receber 3 argumentos;
+2. Se qualquer um dos três argumentos não estiverem preenchidos, a função deve retornar a string:
+    Preencha todos os valores corretamente!
+3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando <code>2</code> ao resultado da multiplicação.
+</em>/
+function verificaArgumentos(a, b, c){
+if(a == undefined || b == undefined || c == undefined){
+    return "Preencha todos os valores corretamente!";
+}
+resultado = a * b * c;
+return resultado;</p>
+<p>}</p>
+<p>// Invoque a função criada acima, passando só dois números como argumento.
+verificaArgumentos(3,4);</p>
+<p>// Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
+nada;</p>
+<p>// Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
+verificaArgumentos(3,4, 2);</p>
+<p>// Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
+24;</p>
+<p>/<em>
+Crie uma função com as seguintes características:
+1. A função deve receber 3 argumentos.
+2. Se somente um argumento for passado, retorne o valor do argumento.
+3. Se dois argumentos forem passados, retorne a soma dos dois argumentos.
+4. Se todos os argumentos forem passados, retorne a soma do primeiro com o segundo, e o resultado, dividido pelo terceiro.
+5. Se nenhum argumento for passado, retorne o valor booleano <code>false</code>.
+6. E ainda, se nenhuma das condições acima forem atendidas, retorne <code>null</code>.
+</em>/
+function verificaArgumentos2(a, b, c){</p>
+<p>if(a == undefined &amp;&amp; b == undefined &amp;&amp; c == undefined){
+    return false;
+}
+if(a != undefined &amp;&amp; b != undefined &amp;&amp; c != undefined){
+    return a + b + c;
+}</p>
+<p>return true;</p>
+<p>}</p>
+<p>// Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
+verificaArgumentos2(1,2,3);
+verificaArgumentos2(1,2);
+verificaArgumentos2(2);
+verificaArgumentos2();</p>
+</body></html>
